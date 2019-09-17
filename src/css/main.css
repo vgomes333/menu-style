@@ -1,0 +1,87 @@
+body {
+  background-color: #e2e2e2 !important;
+  margin: 0 auto;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.ms-sidebar {
+  background-color: #6d0000;
+  max-width: 250px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .ms-sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #fff; }
+    .ms-sidebar-logo img {
+      width: 60px; }
+  .ms-sidebar-nav {
+    margin-top: 20px;
+    margin-left: 1.5rem; }
+    .ms-sidebar-nav p {
+      font-size: 0.8rem;
+      color: #b74b4b;
+      letter-spacing: 0.17em;
+      margin-bottom: .5rem;
+      text-transform: uppercase; }
+    .ms-sidebar-nav ul {
+      margin-bottom: 1rem; }
+    .ms-sidebar-nav li {
+      display: flex;
+      align-items: center; }
+    .ms-sidebar-nav a {
+      color: #fff;
+      font-size: 1.2rem;
+      display: block;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      width: 100%;
+      position: relative;
+      transition: 0s;
+      padding: 5px 0 5px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: start; }
+      .ms-sidebar-nav a::before, .ms-sidebar-nav a::after {
+        content: "";
+        display: none;
+        width: 27px;
+        height: 28px;
+        background: url(../../../../assets/images/hover.svg);
+        position: absolute;
+        right: 0;
+        top: -28px; }
+      .ms-sidebar-nav a::after {
+        top: unset;
+        bottom: -27px;
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg); }
+      .ms-sidebar-nav a:hover {
+        color: #343434;
+        background-color: #fff;
+        text-decoration: none; }
+        .ms-sidebar-nav a:hover::before, .ms-sidebar-nav a:hover::after {
+          display: block; }
+      .ms-sidebar-nav a i {
+        margin-right: 10px; }
+
+.ms-header {
+  background: #fff;
+  min-height: 70px;
+  width: 100%; }
